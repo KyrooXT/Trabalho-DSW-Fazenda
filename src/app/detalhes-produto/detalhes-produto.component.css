@@ -1,0 +1,66 @@
+/* Estilo geral do componente de detalhes do produto */
+.detalhes-produto {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 20px auto; /* Margem para centralizar */
+    max-width: 800px; /* Largura máxima para evitar que fique muito largo */
+  }
+  
+  /* Estilo do cabeçalho do produto */
+  .produto-header {
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */
+  }
+  
+  .produto-nome {
+    font-size: 2rem; /* Tamanho do nome do produto */
+    color: #333; /* Cor do texto */
+    margin: 10px 0; /* Margens para espaçamento */
+  }
+  
+  .produto-descricao {
+    font-size: 1.2rem; /* Tamanho da descrição */
+    color: #666; /* Cor mais clara para a descrição */
+    margin-bottom: 10px; /* Espaçamento abaixo da descrição */
+  }
+  
+  .preco {
+    font-size: 1.5rem; /* Tamanho do preço */
+    color: #4CAF50; /* Verde para o preço */
+  }
+  
+  /* Estilo das imagens do produto */
+  .produto-imagens {
+    display: flex; /* Usando flexbox para alinhamento */
+    justify-content: center; /* Centraliza as imagens */
+    gap: 10px; /* Espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+  }
+  
+  .imagem-container {
+    flex: 1 1 200px; /* Flexível com largura mínima */
+    max-width: 300px; /* Largura máxima para as imagens */
+  }
+  
+  .imagem-container img {
+    border-radius: 10px; /* Bordas arredondadas para as imagens */
+  }
+  
+  /* Estilo do botão voltar */
+  .produto-voltar {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 20px; /* Espaço acima do botão */
+  }
+  
+  .btn-voltar {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto branco */
+    transition: background-color 0.3s; /* Transição suave */
+  }
+  
+  .btn-voltar:hover {
+    background-color: #388E3C; /* Verde escuro ao passar o mouse */
+  }
+  

@@ -1,0 +1,20 @@
+<div *ngIf="produto" class="detalhes-produto">
+    <div class="produto-header">
+      <h2 class="produto-nome">{{ produto.nome }}</h2>
+      <p class="produto-descricao">{{ produto.descricao }}</p>
+      <p><strong>Preço:</strong> <span class="preco">{{ produto.preco }}</span></p>
+    </div>
+  
+    <div class="produto-imagens">
+      <div class="imagem-container" *ngFor="let imagem of produto.imagens">
+        <img [src]="imagem" alt="{{ produto.nome }}" class="img-fluid rounded shadow-sm">
+      </div>
+    </div>
+  
+    <div class="produto-voltar">
+      <button class="btn btn-global btn-voltar" [routerLink]="'/'">
+        <i class="bi bi-arrow-left"></i> Voltar
+      </button>
+    </div>
+  </div>
+  

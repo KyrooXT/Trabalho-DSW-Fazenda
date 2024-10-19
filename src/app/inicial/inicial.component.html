@@ -1,0 +1,19 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4 mb-4" *ngFor="let produto of produtos">
+        <div class="card produto-card shadow-lg">
+          <div class="produto-imagem-wrapper">
+            <img [src]="produto.imagem" class="card-img-top produto-imagem" alt="{{produto.nome}}">
+          </div>
+          <div class="card-body text-center">
+            <h5 class="card-title">{{ produto.nome }}</h5>
+            <p class="card-text">{{ produto.descricao }}</p>
+            <button class="btn btn-ver-mais" (click)="verMais(produto.id)">
+              <i class="fas fa-info-circle"></i> Ver Mais
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

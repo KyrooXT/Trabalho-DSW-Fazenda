@@ -1,0 +1,123 @@
+/* Container principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #87CEFA; /* Azul Claro */
+    border-radius: 10px;
+  }
+  
+  /* Estilo do card */
+  .produto-card {
+    background: #F5F5F5; /* Cinza Claro */
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .produto-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeito de destaque no hover */
+  .produto-card:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(76, 175, 80, 0.1); /* Verde Claro */
+    z-index: 1;
+  }
+  
+  /* Wrapper da imagem */
+  .produto-imagem-wrapper {
+    height: 250px;
+    overflow: hidden;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  /* Imagem do produto */
+  .produto-imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    z-index: 2;
+  }
+  
+  .produto-card:hover .produto-imagem {
+    transform: scale(1.15);
+  }
+  
+  /* Corpo do card */
+  .card-body {
+    padding: 25px;
+    position: relative;
+    z-index: 3;
+  }
+  
+  /* Título do card */
+  .card-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333333; /* Cinza Escuro */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Descrição do card */
+  .card-text {
+    color: #6c757d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    min-height: 60px;
+  }
+  
+  /* Estilo do botão */
+  .btn-ver-mais {
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+    z-index: 3;
+  }
+  
+  .btn-ver-mais i {
+    margin-right: 8px;
+  }
+  
+  .btn-ver-mais:hover {
+    background-color: #388E3C; /* Verde Escuro */
+    transform: translateY(-3px);
+  }
+  
+  .btn-ver-mais:active {
+    background-color: #2E7D32; /* Verde Muito Escuro */
+    transform: translateY(1px);
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 15px;
+    }
+  
+    .card-title {
+      font-size: 1.4rem;
+    }
+  
+    .card-text {
+      font-size: 0.9rem;
+    }
+  }
+  

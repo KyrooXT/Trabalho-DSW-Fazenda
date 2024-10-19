@@ -1,0 +1,61 @@
+/* Estilo do cabeçalho */
+.header {
+    background-color: #4CAF50; /* Verde */
+    color: #fff; /* Texto branco */
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Estilo do rodapé */
+  .footer {
+    background-color: #333333; /* Cinza Escuro */
+    color: #fff; /* Texto branco */
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  /* Estilo do container principal */
+  .main-container {
+    padding: 20px;
+    background-color: #87CEFA; /* Azul Claro */
+    min-height: calc(100vh - 150px); /* Para que o conteúdo preencha a tela */
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 2.5rem;
+    color: #333333; /* Cinza Escuro */
+    text-align: center;
+    margin: 20px 0;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo do botão global (exemplo para uso em toda a aplicação) */
+  .btn-global {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+  }
+  
+  .btn-global:hover {
+    background-color: #388E3C; /* Verde Escuro */
+  }
+  
+  /* Estilos de responsividade */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Reduz o tamanho do título em telas menores */
+    }
+  }
+  
